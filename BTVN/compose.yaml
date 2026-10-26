@@ -1,0 +1,47 @@
+name: btvn-gateway
+services:
+  user:
+    build: .
+    volumes:
+      - ./results:/app/results
+    environment:
+      SERVICE: user
+      JWT_SECRET: ${JWT_SECRET:-local-lab-jwt-secret-change-before-deploy-12345}
+      MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-labadmin}
+      MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-lab-password-12345}
+      MINIO_PUBLIC: localhost:19000
+    ports:
+      - "127.0.0.1:18081:8000"
+    depends_on:
+      - order
+      - minio
+  order:
+    build: .
+    environment:
+      SERVICE: order
+    ports:
+      - "127.0.0.1:18082:8000"
+  gateway:
+    image: nginx:stable-alpine
+    ports:
+      - "127.0.0.1:18000:8080"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - user
+      - order
+  minio:
+    build:
+      context: .
+      dockerfile: minio.Dockerfile
+    command: server /data --console-address :9001
+    environment:
+      MINIO_ROOT_USER: ${MINIO_ROOT_USER:-labadmin}
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:-lab-password-12345}
+    ports:
+      - "127.0.0.1:19000:9000"
+      - "127.0.0.1:19001:9001"
+    volumes:
+      - minio-data:/data
+volumes:
+  minio-data:

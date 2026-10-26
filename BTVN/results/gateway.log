@@ -1,0 +1,100 @@
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *26 limiting requests, excess: 0.910 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *27 limiting requests, excess: 0.910 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *30 limiting requests, excess: 0.670 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *29 limiting requests, excess: 0.620 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *35 limiting requests, excess: 0.510 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *31 limiting requests, excess: 0.500 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *36 limiting requests, excess: 0.490 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *34 limiting requests, excess: 0.490 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *38 limiting requests, excess: 0.400 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *32 limiting requests, excess: 0.320 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *37 limiting requests, excess: 0.320 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *33 limiting requests, excess: 0.310 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *41 limiting requests, excess: 0.300 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *40 limiting requests, excess: 0.260 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *39 limiting requests, excess: 0.240 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *44 limiting requests, excess: 0.200 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *42 limiting requests, excess: 0.200 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *43 limiting requests, excess: 0.190 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *46 limiting requests, excess: 0.120 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *49 limiting requests, excess: 0.110 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *45 limiting requests, excess: 0.110 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *47 limiting requests, excess: 0.100 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *50 limiting requests, excess: 0.100 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 2026/10/26 16:07:14 [error] 30#30: *48 limiting requests, excess: 0.100 by zone "api", client: 172.19.0.4, server: , request: "GET /users HTTP/1.1", host: "gateway:8080"
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=429 rt=0.000 upstream=- limit=REJECTED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.003 upstream=0.001 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.008 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.008 upstream=0.004 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.003 upstream=0.001 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.003 upstream=0.001 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.003 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.002 upstream=0.001 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.002 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.003 upstream=0.001 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.004 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.003 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.006 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | 172.19.0.4 "GET /users HTTP/1.1" status=200 rt=0.005 upstream=0.002 limit=PASSED
+gateway-1  | /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
+gateway-1  | /docker-entrypoint.sh: Looking for shell scripts in /docker-entrypoint.d/
+gateway-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
+gateway-1  | 10-listen-on-ipv6-by-default.sh: info: IPv6 listen already enabled
+gateway-1  | /docker-entrypoint.sh: Sourcing /docker-entrypoint.d/15-local-resolvers.envsh
+gateway-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/20-envsubst-on-templates.sh
+gateway-1  | /docker-entrypoint.sh: Launching /docker-entrypoint.d/30-tune-worker-processes.sh
+gateway-1  | /docker-entrypoint.sh: Configuration complete; ready for start up

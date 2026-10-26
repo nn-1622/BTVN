@@ -1,0 +1,16 @@
+{
+  "direct": {
+    "samples": 40,
+    "mean_ms": 3.487,
+    "median_ms": 3.585,
+    "p95_ms": 4.502
+  },
+  "gateway": {
+    "samples": 40,
+    "mean_ms": 7.391,
+    "median_ms": 7.62,
+    "p95_ms": 9.428
+  },
+  "mean_overhead_ms": 3.904,
+  "method": "40 sequential samples/path, 3 warmups, alternating order, 150ms pauses excluded; same container client; gateway includes JWT verification"
+}

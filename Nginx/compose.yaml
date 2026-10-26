@@ -1,0 +1,18 @@
+name: nginx-waf-lab
+
+services:
+  web:
+    image: bkimminich/juice-shop:latest
+    ports:
+      - "127.0.0.1:3000:3000"
+
+  waf:
+    image: owasp/modsecurity-crs:nginx
+    depends_on:
+      - web
+    ports:
+      - "127.0.0.1:18080:8080"
+    environment:
+      BACKEND: "http://web:3000"
+      MODSEC_RULE_ENGINE: "On"
+      BLOCKING_PARANOIA: "1"

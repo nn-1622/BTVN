@@ -1,0 +1,5 @@
+NAME                     IMAGE                                                                     COMMAND                  SERVICE   CREATED              STATUS                  PORTS
+btvn-gateway-gateway-1   nginx:stable-alpine                                                       "/docker-entrypoint.…"   gateway   About a minute ago   Up Less than a second   127.0.0.1:18000->8080/tcp
+btvn-gateway-minio-1     sha256:6a6b465f0b5d3745ac867cad5ae541cdf0665e2dabe140fd12eed958f99c7f6d   "minio server /data …"   minio     About a minute ago   Up About a minute       127.0.0.1:19000->9000/tcp, 127.0.0.1:19001->9001/tcp
+btvn-gateway-order-1     btvn-gateway-order                                                        "gunicorn --bind 0.0…"   order     18 seconds ago       Up 15 seconds           127.0.0.1:18082->8000/tcp
+btvn-gateway-user-1      btvn-gateway-user                                                         "gunicorn --bind 0.0…"   user      16 seconds ago       Up 14 seconds           127.0.0.1:18081->8000/tcp

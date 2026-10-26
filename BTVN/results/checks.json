@@ -1,0 +1,80 @@
+[
+  {
+    "test": "Missing JWT -> 401",
+    "pass": true,
+    "detail": "No Authorization header"
+  },
+  {
+    "test": "Forged JWT -> 401",
+    "pass": true,
+    "detail": "Invalid token"
+  },
+  {
+    "test": "Expired JWT -> 401",
+    "pass": true,
+    "detail": "Expired signed token"
+  },
+  {
+    "test": "Wrong JWT signature -> 401",
+    "pass": true,
+    "detail": "Valid format, incorrect signing key"
+  },
+  {
+    "test": "Routing /users",
+    "pass": true,
+    "detail": "{\"service\":\"user\",\"user\":{\"email\":\"an@example.com\",\"id\":\"1\",\"name\":\"Nguyen Van An\"}}\n"
+  },
+  {
+    "test": "Routing /orders",
+    "pass": true,
+    "detail": "{\"orders\":[{\"id\":\"O001\",\"product\":\"Keyboard\",\"total\":500000,\"user_id\":\"1\"},{\"id\":\"O002\",\"product\":\"Mouse\",\"total\":200000,\"user_id\":\"1\"}],\"service\":\"order\"}\n"
+  },
+  {
+    "test": "Gateway overwrites forged identity",
+    "pass": true,
+    "detail": "{\"service\":\"user\",\"user\":{\"email\":\"an@example.com\",\"id\":\"1\",\"name\":\"Nguyen Van An\"}}\n"
+  },
+  {
+    "test": "Other user is forbidden",
+    "pass": true,
+    "detail": "/users/2 with user 1 token"
+  },
+  {
+    "test": "Dashboard aggregation",
+    "pass": true,
+    "detail": "{\"orders\":[{\"id\":\"O001\",\"product\":\"Keyboard\",\"total\":500000,\"user_id\":\"1\"},{\"id\":\"O002\",\"product\":\"Mouse\",\"total\":200000,\"user_id\":\"1\"}],\"summary\":{\"order_count\":2,\"total\":700000},\"user\":{\"email\":\"an@example.com\",\"id\":\"1\",\"name\":\"Nguyen Van An\"}}\n"
+  },
+  {
+    "test": "URL expires after 300 seconds",
+    "pass": true,
+    "detail": "X-Amz-Expires=300"
+  },
+  {
+    "test": "Direct upload to MinIO",
+    "pass": true,
+    "detail": "HTTP 200; key=1/d864fe9394b24e5cac16cf838c31c0c1.png"
+  },
+  {
+    "test": "Bucket remains private",
+    "pass": true,
+    "detail": "Anonymous GET: 403"
+  },
+  {
+    "test": "Valet key cannot change object path",
+    "pass": true,
+    "detail": "Modified path: 403"
+  },
+  {
+    "test": "MinIO rejects expired signed URL",
+    "pass": true,
+    "detail": "HTTP 403; signed 10 minutes ago, validity 300s"
+  },
+  {
+    "test": "Rate limiting -> 429",
+    "pass": true,
+    "detail": {
+      "200": 1,
+      "429": 29
+    }
+  }
+]
