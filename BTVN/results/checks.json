@@ -52,7 +52,7 @@
   {
     "test": "Direct upload to MinIO",
     "pass": true,
-    "detail": "HTTP 200; key=1/d864fe9394b24e5cac16cf838c31c0c1.png"
+    "detail": "HTTP 200; key=1/193a09d60e3448cd893f59d915a60f84.png"
   },
   {
     "test": "Bucket remains private",
